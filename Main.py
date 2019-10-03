@@ -6,7 +6,7 @@ bot = commands.Bot(command_prefix = ".")
 
 @bot.event
 async def on_ready():
-  await bot.change_presence(type=discord.ActivityType.watching, activity=discord.Game("Here"))
+  await bot.change_presence(activity=discord.activity(type=discord.ActivityType.watching, activity=discord.Game("Here"))
   
 @bot.command()
 async def ping(ctx):
